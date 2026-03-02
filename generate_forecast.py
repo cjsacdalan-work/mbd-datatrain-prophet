@@ -74,6 +74,7 @@ def fetch_firebase_data():
         fb_df["joinedAt"] = pd.to_datetime(fb_df["joinedAt"], utc=True)
         fb_df["joinedAt"] = fb_df["joinedAt"].dt.tz_localize(None)
         fb_df["joinedAt"] = fb_df["joinedAt"].dt.normalize()
+        fb_df = fb_df[fb_df["joinedAt"] <= pd.Timestamp.today()]
         daily_counts = fb_df.groupby("joinedAt").size().reset_index(name="y")
         daily_counts.rename(columns={"joinedAt": "ds"}, inplace=True)
         print(f"[Firebase] Fetched shape: {daily_counts.shape}")
@@ -98,7 +99,7 @@ def export_forecast(forecast, filename):
     """Export forecast results to a JSON file."""
     result = forecast[["ds", "yhat"]].copy()
     result["date"] = result["ds"].dt.strftime("%Y-%m-%d")
-    result["value"] = result["yhat"].round(0).astype(int)
+    result["value"] = result["yhat"].clip(lower=0).round(0).astype(int)
     output = result[["date", "value"]].to_dict(orient="records")
 
     with open(filename, "w") as f:
