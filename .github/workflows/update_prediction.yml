@@ -37,6 +37,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # ADDED: model_metrics.json so the accuracy scores are saved to the repo
-          git add forecast_supply.json forecast_demand.json model_metrics.json
+          git add forecast_supply.json forecast_demand.json forecast_blood_types.json model_metrics.json
           git diff --cached --quiet || git commit -m "chore: update forecast and accuracy data [skip ci]"
           git push
