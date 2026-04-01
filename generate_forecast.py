@@ -169,11 +169,16 @@ def train_and_predict(df, label="Model"):
     return forecast
 
 
+ACTUALS_THRESHOLD = 5  # Months with actual value below this are treated as missing data
+
+
 def export_forecast(forecast, actuals_df, filename):
     """Export forecast results to a JSON file.
 
-    For dates present in actuals_df, the actual y value is used.
-    For future dates, the Prophet yhat prediction is used.
+    For dates present in actuals_df whose value meets the threshold, the actual
+    y value is used.  If the actual value is missing (NaN) or below the threshold
+    it is treated as missing data and the Prophet yhat prediction is used instead,
+    ensuring the dashboard never shows a blank or dropped line.
     """
     result = forecast[["ds", "yhat"]].copy()
 
@@ -181,8 +186,11 @@ def export_forecast(forecast, actuals_df, filename):
     actuals = actuals_df[["ds", "y"]].copy()
     result = result.merge(actuals, on="ds", how="left")
 
-    # Use actual y when available, otherwise fall back to yhat
-    result["value"] = result["y"].combine_first(result["yhat"])
+    # Smart fallback: use yhat when actual is absent or below the threshold
+    use_actual = result["y"].notna() & (result["y"] >= ACTUALS_THRESHOLD)
+    result["value"] = result["yhat"].copy()
+    result.loc[use_actual, "value"] = result.loc[use_actual, "y"]
+
     result["value"] = result["value"].clip(lower=0).round(0).astype(int)
     result["date"] = result["ds"].dt.strftime("%Y-%m-%d")
     output = result[["date", "value"]].to_dict(orient="records")
@@ -232,9 +240,19 @@ def export_blood_type_distribution(supply_forecast, demand_forecast, supply_actu
 
     output = []
     for _, row in merged.iterrows():
-        # Use actual value when available, fall back to Prophet yhat (mirrors export_forecast)
-        supply_val = row["y_supply"] if not pd.isna(row["y_supply"]) else row["supply_yhat"]
-        demand_val = row["y_demand"] if not pd.isna(row["y_demand"]) else row["demand_yhat"]
+        # Smart fallback: use yhat when actual is absent or below threshold (mirrors export_forecast)
+        supply_actual = row["y_supply"]
+        supply_val = (
+            supply_actual
+            if (not pd.isna(supply_actual) and supply_actual >= ACTUALS_THRESHOLD)
+            else row["supply_yhat"]
+        )
+        demand_actual = row["y_demand"]
+        demand_val = (
+            demand_actual
+            if (not pd.isna(demand_actual) and demand_actual >= ACTUALS_THRESHOLD)
+            else row["demand_yhat"]
+        )
         total_supply = max(0, round(supply_val))
         total_demand = max(0, round(demand_val))
 
