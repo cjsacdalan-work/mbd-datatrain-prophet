@@ -170,6 +170,44 @@ def train_and_predict(df, label="Model"):
 
 
 ACTUALS_THRESHOLD = 5  # Months with actual value below this are treated as missing data
+FLOOR_FALLBACK_THRESHOLD = 5  # yhat values at or below this trigger the smart floor fallback
+
+
+def calculate_safe_baseline(df, n_months=3):
+    """Return the mean of the last *n_months* non-zero historical values.
+
+    Falls back to the global non-zero minimum if fewer than *n_months* valid
+    months exist, and to 1 if the entire series is zero.
+    """
+    nonzero = df[df["y"] > 0]["y"]
+    if nonzero.empty:
+        print("[Baseline] No non-zero historical values found; using absolute minimum of 1.")
+        return 1.0
+    last_n = nonzero.tail(n_months)
+    baseline = float(last_n.mean())
+    print(
+        f"[Baseline] Safe baseline from last {len(last_n)} non-zero month(s): {baseline:.1f}"
+    )
+    return baseline
+
+
+def apply_floor_fallback(forecast, baseline, label="Model"):
+    """Replace yhat values at or below FLOOR_FALLBACK_THRESHOLD with *baseline*.
+
+    Returns a *copy* of the forecast DataFrame so the original is never mutated.
+    """
+    forecast = forecast.copy()
+    low_mask = forecast["yhat"] <= FLOOR_FALLBACK_THRESHOLD
+    n_replaced = int(low_mask.sum())
+    if n_replaced > 0:
+        print(
+            f"[{label}] Floor fallback: replacing {n_replaced} yhat value(s) "
+            f"<= {FLOOR_FALLBACK_THRESHOLD} with baseline {baseline:.1f}"
+        )
+        forecast.loc[low_mask, "yhat"] = baseline
+    else:
+        print(f"[{label}] No yhat values at or below floor threshold — no fallback needed.")
+    return forecast
 
 
 def export_forecast(forecast, actuals_df, filename):
@@ -306,6 +344,8 @@ def main():
     print(f"[Supply] Monthly aggregated shape: {supply_df.shape}")
 
     supply_forecast = train_and_predict(supply_df, label="Supply")
+    supply_baseline = calculate_safe_baseline(supply_df)
+    supply_forecast = apply_floor_fallback(supply_forecast, supply_baseline, label="Supply")
     export_forecast(supply_forecast, supply_df, "forecast_supply.json")
 
     # --- Demand Pipeline ---
@@ -324,6 +364,8 @@ def main():
     demand_df = ensure_continuous_monthly(demand_df)
 
     demand_forecast = train_and_predict(demand_df, label="Demand")
+    demand_baseline = calculate_safe_baseline(demand_df)
+    demand_forecast = apply_floor_fallback(demand_forecast, demand_baseline, label="Demand")
     export_forecast(demand_forecast, demand_df, "forecast_demand.json")
 
     export_blood_type_distribution(supply_forecast, demand_forecast, supply_df, demand_df)
