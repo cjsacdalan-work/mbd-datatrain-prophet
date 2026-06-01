@@ -740,12 +740,12 @@
   {
     "date": "2025-07-01",
     "totals": {
-      "supply": 260,
+      "supply": 259,
       "demand": 1069
     },
     "distribution": {
       "O+": {
-        "supply": 117,
+        "supply": 116,
         "demand": 481
       },
       "A+": {
@@ -863,20 +863,20 @@
   {
     "date": "2025-10-01",
     "totals": {
-      "supply": 53,
+      "supply": 52,
       "demand": 1252
     },
     "distribution": {
       "O+": {
-        "supply": 22,
+        "supply": 23,
         "demand": 563
       },
       "A+": {
-        "supply": 12,
+        "supply": 11,
         "demand": 275
       },
       "B+": {
-        "supply": 13,
+        "supply": 12,
         "demand": 300
       },
       "AB+": {
@@ -986,36 +986,36 @@
   {
     "date": "2026-01-01",
     "totals": {
-      "supply": 81,
+      "supply": 26,
       "demand": 199
     },
     "distribution": {
       "O+": {
-        "supply": 37,
+        "supply": 13,
         "demand": 89
       },
       "A+": {
-        "supply": 18,
+        "supply": 6,
         "demand": 44
       },
       "B+": {
-        "supply": 19,
+        "supply": 6,
         "demand": 48
       },
       "AB+": {
-        "supply": 4,
+        "supply": 1,
         "demand": 10
       },
       "O-": {
-        "supply": 1,
+        "supply": 0,
         "demand": 3
       },
       "A-": {
-        "supply": 1,
+        "supply": 0,
         "demand": 2
       },
       "B-": {
-        "supply": 1,
+        "supply": 0,
         "demand": 2
       },
       "AB-": {
@@ -1027,36 +1027,36 @@
   {
     "date": "2026-02-01",
     "totals": {
-      "supply": 204,
+      "supply": 145,
       "demand": 400
     },
     "distribution": {
       "O+": {
-        "supply": 92,
+        "supply": 66,
         "demand": 180
       },
       "A+": {
-        "supply": 45,
+        "supply": 32,
         "demand": 88
       },
       "B+": {
-        "supply": 49,
+        "supply": 35,
         "demand": 96
       },
       "AB+": {
-        "supply": 10,
+        "supply": 7,
         "demand": 20
       },
       "O-": {
-        "supply": 3,
+        "supply": 2,
         "demand": 6
       },
       "A-": {
-        "supply": 2,
+        "supply": 1,
         "demand": 4
       },
       "B-": {
-        "supply": 2,
+        "supply": 1,
         "demand": 4
       },
       "AB-": {
@@ -1068,36 +1068,36 @@
   {
     "date": "2026-03-01",
     "totals": {
-      "supply": 262,
+      "supply": 110,
       "demand": 375
     },
     "distribution": {
       "O+": {
-        "supply": 117,
+        "supply": 49,
         "demand": 168
       },
       "A+": {
-        "supply": 58,
+        "supply": 24,
         "demand": 82
       },
       "B+": {
-        "supply": 63,
+        "supply": 26,
         "demand": 90
       },
       "AB+": {
-        "supply": 13,
+        "supply": 6,
         "demand": 19
       },
       "O-": {
-        "supply": 4,
+        "supply": 2,
         "demand": 6
       },
       "A-": {
-        "supply": 3,
+        "supply": 1,
         "demand": 4
       },
       "B-": {
-        "supply": 3,
+        "supply": 1,
         "demand": 4
       },
       "AB-": {
@@ -1109,40 +1109,40 @@
   {
     "date": "2026-04-01",
     "totals": {
-      "supply": 157,
+      "supply": 85,
       "demand": 260
     },
     "distribution": {
       "O+": {
-        "supply": 69,
+        "supply": 39,
         "demand": 117
       },
       "A+": {
-        "supply": 35,
+        "supply": 19,
         "demand": 57
       },
       "B+": {
-        "supply": 38,
+        "supply": 20,
         "demand": 62
       },
       "AB+": {
-        "supply": 8,
+        "supply": 4,
         "demand": 13
       },
       "O-": {
-        "supply": 2,
+        "supply": 1,
         "demand": 4
       },
       "A-": {
-        "supply": 2,
+        "supply": 1,
         "demand": 3
       },
       "B-": {
-        "supply": 2,
+        "supply": 1,
         "demand": 3
       },
       "AB-": {
-        "supply": 1,
+        "supply": 0,
         "demand": 1
       }
     }
@@ -1150,40 +1150,40 @@
   {
     "date": "2026-05-01",
     "totals": {
-      "supply": 601,
+      "supply": 45,
       "demand": 600
     },
     "distribution": {
       "O+": {
-        "supply": 271,
+        "supply": 21,
         "demand": 270
       },
       "A+": {
-        "supply": 132,
+        "supply": 10,
         "demand": 132
       },
       "B+": {
-        "supply": 144,
+        "supply": 11,
         "demand": 144
       },
       "AB+": {
-        "supply": 30,
+        "supply": 2,
         "demand": 30
       },
       "O-": {
-        "supply": 9,
+        "supply": 1,
         "demand": 9
       },
       "A-": {
-        "supply": 6,
+        "supply": 0,
         "demand": 6
       },
       "B-": {
-        "supply": 6,
+        "supply": 0,
         "demand": 6
       },
       "AB-": {
-        "supply": 3,
+        "supply": 0,
         "demand": 3
       }
     }
@@ -1191,40 +1191,40 @@
   {
     "date": "2026-06-01",
     "totals": {
-      "supply": 190,
+      "supply": 305,
       "demand": 500
     },
     "distribution": {
       "O+": {
-        "supply": 84,
+        "supply": 137,
         "demand": 225
       },
       "A+": {
-        "supply": 42,
+        "supply": 67,
         "demand": 110
       },
       "B+": {
-        "supply": 46,
+        "supply": 73,
         "demand": 120
       },
       "AB+": {
-        "supply": 10,
+        "supply": 15,
         "demand": 25
       },
       "O-": {
-        "supply": 3,
+        "supply": 5,
         "demand": 8
       },
       "A-": {
-        "supply": 2,
+        "supply": 3,
         "demand": 5
       },
       "B-": {
-        "supply": 2,
+        "supply": 3,
         "demand": 5
       },
       "AB-": {
-        "supply": 1,
+        "supply": 2,
         "demand": 2
       }
     }
@@ -1232,24 +1232,24 @@
   {
     "date": "2026-07-01",
     "totals": {
-      "supply": 51,
+      "supply": 44,
       "demand": 600
     },
     "distribution": {
       "O+": {
-        "supply": 22,
+        "supply": 20,
         "demand": 270
       },
       "A+": {
-        "supply": 11,
+        "supply": 10,
         "demand": 132
       },
       "B+": {
-        "supply": 12,
+        "supply": 11,
         "demand": 144
       },
       "AB+": {
-        "supply": 3,
+        "supply": 2,
         "demand": 30
       },
       "O-": {
@@ -1257,11 +1257,11 @@
         "demand": 9
       },
       "A-": {
-        "supply": 1,
+        "supply": 0,
         "demand": 6
       },
       "B-": {
-        "supply": 1,
+        "supply": 0,
         "demand": 6
       },
       "AB-": {
@@ -1273,40 +1273,40 @@
   {
     "date": "2026-08-01",
     "totals": {
-      "supply": 901,
+      "supply": 783,
       "demand": 400
     },
     "distribution": {
       "O+": {
-        "supply": 405,
+        "supply": 352,
         "demand": 180
       },
       "A+": {
-        "supply": 198,
+        "supply": 172,
         "demand": 88
       },
       "B+": {
-        "supply": 216,
+        "supply": 188,
         "demand": 96
       },
       "AB+": {
-        "supply": 45,
+        "supply": 39,
         "demand": 20
       },
       "O-": {
-        "supply": 14,
+        "supply": 12,
         "demand": 6
       },
       "A-": {
-        "supply": 9,
+        "supply": 8,
         "demand": 4
       },
       "B-": {
-        "supply": 9,
+        "supply": 8,
         "demand": 4
       },
       "AB-": {
-        "supply": 5,
+        "supply": 4,
         "demand": 2
       }
     }
@@ -1314,40 +1314,40 @@
   {
     "date": "2026-09-01",
     "totals": {
-      "supply": 86,
+      "supply": 304,
       "demand": 614
     },
     "distribution": {
       "O+": {
-        "supply": 39,
+        "supply": 136,
         "demand": 277
       },
       "A+": {
-        "supply": 19,
+        "supply": 67,
         "demand": 135
       },
       "B+": {
-        "supply": 21,
+        "supply": 73,
         "demand": 147
       },
       "AB+": {
-        "supply": 4,
+        "supply": 15,
         "demand": 31
       },
       "O-": {
-        "supply": 1,
+        "supply": 5,
         "demand": 9
       },
       "A-": {
-        "supply": 1,
+        "supply": 3,
         "demand": 6
       },
       "B-": {
-        "supply": 1,
+        "supply": 3,
         "demand": 6
       },
       "AB-": {
-        "supply": 0,
+        "supply": 2,
         "demand": 3
       }
     }
@@ -1355,40 +1355,40 @@
   {
     "date": "2026-10-01",
     "totals": {
-      "supply": 86,
+      "supply": 304,
       "demand": 492
     },
     "distribution": {
       "O+": {
-        "supply": 39,
+        "supply": 136,
         "demand": 222
       },
       "A+": {
-        "supply": 19,
+        "supply": 67,
         "demand": 108
       },
       "B+": {
-        "supply": 21,
+        "supply": 73,
         "demand": 118
       },
       "AB+": {
-        "supply": 4,
+        "supply": 15,
         "demand": 25
       },
       "O-": {
-        "supply": 1,
+        "supply": 5,
         "demand": 7
       },
       "A-": {
-        "supply": 1,
+        "supply": 3,
         "demand": 5
       },
       "B-": {
-        "supply": 1,
+        "supply": 3,
         "demand": 5
       },
       "AB-": {
-        "supply": 0,
+        "supply": 2,
         "demand": 2
       }
     }
@@ -1396,36 +1396,36 @@
   {
     "date": "2026-11-01",
     "totals": {
-      "supply": 835,
+      "supply": 738,
       "demand": 740
     },
     "distribution": {
       "O+": {
-        "supply": 376,
+        "supply": 333,
         "demand": 333
       },
       "A+": {
-        "supply": 184,
+        "supply": 162,
         "demand": 163
       },
       "B+": {
-        "supply": 200,
+        "supply": 177,
         "demand": 178
       },
       "AB+": {
-        "supply": 42,
+        "supply": 37,
         "demand": 37
       },
       "O-": {
-        "supply": 13,
+        "supply": 11,
         "demand": 11
       },
       "A-": {
-        "supply": 8,
+        "supply": 7,
         "demand": 7
       },
       "B-": {
-        "supply": 8,
+        "supply": 7,
         "demand": 7
       },
       "AB-": {
@@ -1437,28 +1437,28 @@
   {
     "date": "2026-12-01",
     "totals": {
-      "supply": 299,
+      "supply": 323,
       "demand": 820
     },
     "distribution": {
       "O+": {
-        "supply": 135,
+        "supply": 145,
         "demand": 370
       },
       "A+": {
-        "supply": 66,
+        "supply": 71,
         "demand": 180
       },
       "B+": {
-        "supply": 72,
+        "supply": 78,
         "demand": 197
       },
       "AB+": {
-        "supply": 15,
+        "supply": 16,
         "demand": 41
       },
       "O-": {
-        "supply": 4,
+        "supply": 5,
         "demand": 12
       },
       "A-": {
@@ -1470,7 +1470,7 @@
         "demand": 8
       },
       "AB-": {
-        "supply": 1,
+        "supply": 2,
         "demand": 4
       }
     }
@@ -1478,40 +1478,40 @@
   {
     "date": "2027-01-01",
     "totals": {
-      "supply": 64,
+      "supply": 304,
       "demand": 96
     },
     "distribution": {
       "O+": {
-        "supply": 29,
+        "supply": 136,
         "demand": 44
       },
       "A+": {
-        "supply": 14,
+        "supply": 67,
         "demand": 21
       },
       "B+": {
-        "supply": 15,
+        "supply": 73,
         "demand": 23
       },
       "AB+": {
-        "supply": 3,
+        "supply": 15,
         "demand": 5
       },
       "O-": {
-        "supply": 1,
+        "supply": 5,
         "demand": 1
       },
       "A-": {
-        "supply": 1,
+        "supply": 3,
         "demand": 1
       },
       "B-": {
-        "supply": 1,
+        "supply": 3,
         "demand": 1
       },
       "AB-": {
-        "supply": 0,
+        "supply": 2,
         "demand": 0
       }
     }
@@ -1519,41 +1519,164 @@
   {
     "date": "2027-02-01",
     "totals": {
-      "supply": 79,
+      "supply": 304,
       "demand": 50
     },
     "distribution": {
       "O+": {
-        "supply": 36,
+        "supply": 136,
         "demand": 24
       },
       "A+": {
-        "supply": 17,
+        "supply": 67,
         "demand": 11
       },
       "B+": {
-        "supply": 19,
+        "supply": 73,
         "demand": 12
       },
       "AB+": {
-        "supply": 4,
+        "supply": 15,
         "demand": 2
       },
       "O-": {
-        "supply": 1,
+        "supply": 5,
         "demand": 1
       },
       "A-": {
-        "supply": 1,
+        "supply": 3,
         "demand": 0
       },
       "B-": {
-        "supply": 1,
+        "supply": 3,
         "demand": 0
       },
       "AB-": {
-        "supply": 0,
+        "supply": 2,
         "demand": 0
+      }
+    }
+  },
+  {
+    "date": "2027-03-01",
+    "totals": {
+      "supply": 10,
+      "demand": 296
+    },
+    "distribution": {
+      "O+": {
+        "supply": 6,
+        "demand": 134
+      },
+      "A+": {
+        "supply": 2,
+        "demand": 65
+      },
+      "B+": {
+        "supply": 2,
+        "demand": 71
+      },
+      "AB+": {
+        "supply": 0,
+        "demand": 15
+      },
+      "O-": {
+        "supply": 0,
+        "demand": 4
+      },
+      "A-": {
+        "supply": 0,
+        "demand": 3
+      },
+      "B-": {
+        "supply": 0,
+        "demand": 3
+      },
+      "AB-": {
+        "supply": 0,
+        "demand": 1
+      }
+    }
+  },
+  {
+    "date": "2027-04-01",
+    "totals": {
+      "supply": 304,
+      "demand": 500
+    },
+    "distribution": {
+      "O+": {
+        "supply": 136,
+        "demand": 225
+      },
+      "A+": {
+        "supply": 67,
+        "demand": 110
+      },
+      "B+": {
+        "supply": 73,
+        "demand": 120
+      },
+      "AB+": {
+        "supply": 15,
+        "demand": 25
+      },
+      "O-": {
+        "supply": 5,
+        "demand": 8
+      },
+      "A-": {
+        "supply": 3,
+        "demand": 5
+      },
+      "B-": {
+        "supply": 3,
+        "demand": 5
+      },
+      "AB-": {
+        "supply": 2,
+        "demand": 2
+      }
+    }
+  },
+  {
+    "date": "2027-05-01",
+    "totals": {
+      "supply": 47,
+      "demand": 489
+    },
+    "distribution": {
+      "O+": {
+        "supply": 23,
+        "demand": 221
+      },
+      "A+": {
+        "supply": 10,
+        "demand": 108
+      },
+      "B+": {
+        "supply": 11,
+        "demand": 117
+      },
+      "AB+": {
+        "supply": 2,
+        "demand": 24
+      },
+      "O-": {
+        "supply": 1,
+        "demand": 7
+      },
+      "A-": {
+        "supply": 0,
+        "demand": 5
+      },
+      "B-": {
+        "supply": 0,
+        "demand": 5
+      },
+      "AB-": {
+        "supply": 0,
+        "demand": 2
       }
     }
   }
